@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 02</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script href='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+  </head>
+  <body style="hieght:100px; margin 0 0 10 0">
+		
+		<div class="wrapper d-flex align-items-start">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+		
+                <div class="p-4 pt-5" style="height: 600px;">
+				<div style="width: 200px; height: 500px; overflow-y: scroll;">
+		  <h1><a href="index.html" class="logo">Splash</a></h1>
+	        <ul class="list-unstyled components mb-5">
+                   <li>
+             <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG2" href="#"><img src="27.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+                  <li>
+              <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG3" data-toggle="modal" href="#"><img src="28.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+                   <li>
+                  <a class="dropdown-item" href="#"><img src="Music.png" alt="" style="width:100%; margin:0px" ></a>
+	          </li>
+                  <li>
+               <a class="dropdown-item" id="div5" href="#"><img src="comedy.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+	          <li>
+                  <a class="dropdown-item"  id="div6" href="#"><img src="inspiration.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+	          <li>
+              <a class="dropdown-item"  id="div6" href="#"><img src="../sidebar-02/images/26.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+	        </ul>
+               </div>
+			   </div>
+        <!-- modal-->
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../sidebar-02/images/1.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!--1-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG1" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../sidebar-02/images/2.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!--2-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG2" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../sidebar-02/images/3.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!--3-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG3" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../sidebar-02/images/4.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!---->
+</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-xl-5 pt-5" margin="0 0 0 0">
+
+        <video autoplay loop muted class="bgvid" id="bgvid"  width="100%">
+      <source src="Eat.mp4" type="video/mp4">
+    </video></div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<script>
+ (function($) {
+showSwal = function(type) {
+'use strict';
+if (type === 'auto-close') {
+swal({
+title: 'I will close in 2 seconds!',
+imageUrl:'26.png',
+timer: 5000,
+button: false
+}).then(
+function() {},
+// handling the promise rejection
+function(dismiss) {
+if (dismiss === 'timer') {
+console.log('I was closed by the timer')
+}
+}
+)
+}else{
+swal("Error occured !");
+}
+}
+
+})(jQuery);
+
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
