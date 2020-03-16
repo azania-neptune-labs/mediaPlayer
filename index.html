@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Sidebar 02</title>
+  	<title>Play Media</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,7 +12,7 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script href='https://code.jquery.com/jquery-1.12.1.min.js'></script>
   </head>
-  <body style="hieght:100px; margin 0 0 10 0">
+  <body >
 		
 		<div class="wrapper d-flex align-items-start">
 			<nav id="sidebar">
@@ -24,26 +24,38 @@
         </div>
 		
                 <div class="p-4 pt-5" style="height: 600px;">
-				<div style="width: 200px; height: 500px; overflow-y: scroll;">
+				<div class="scroller" style="width: 200px; height: 500px; overflow-y: scroll;">
 		  <h1><a href="index.html" class="logo">Splash</a></h1>
 	        <ul class="list-unstyled components mb-5">
                    <li>
-             <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG2" href="#"><img src="27.png" alt="" style="width:100%; margin:0px"></a>
+             <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG" href="#"><img src="27.png" alt="" style="width:100%; margin:0px"></a>
 	          </li>
                   <li>
-              <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG3" data-toggle="modal" href="#"><img src="28.png" alt="" style="width:100%; margin:0px"></a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG1" data-toggle="modal" href="#"><img src="28.png" alt="" style="width:100%; margin:0px"></a>
 	          </li>
                    <li>
-                  <a class="dropdown-item" href="#"><img src="Music.png" alt="" style="width:100%; margin:0px" ></a>
+                  <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG2" href="#"><img src="Music.png" alt="" style="width:100%; margin:0px" ></a>
 	          </li>
                   <li>
-               <a class="dropdown-item" id="div5" href="#"><img src="comedy.png" alt="" style="width:100%; margin:0px"></a>
+               <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG3" href="#"><img src="comedy.png" alt="" style="width:100%; margin:0px"></a>
 	          </li>
 	          <li>
-                  <a class="dropdown-item"  id="div6" href="#"><img src="inspiration.png" alt="" style="width:100%; margin:0px"></a>
+                  <a class="dropdown-item"  data-toggle="modal" data-target="#modalIMG4" href="#"><img src="inspiration.png" alt="" style="width:100%; margin:0px"></a>
 	          </li>
 	          <li>
-              <a class="dropdown-item"  id="div6" href="#"><img src="../sidebar-02/images/26.png" alt="" style="width:100%; margin:0px"></a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#modalIMG5" href="#"><img src="../sidebar-02/images/26.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+			   <li>
+              <a class="dropdown-item"  data-toggle="modal" data-target="#modalIMG3" href="#"><img src="../sidebar-02/thumbnails/1.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+			   <li>
+              <a class="dropdown-item"  data-toggle="modal" data-target="#modalIMG1" href="#"><img src="../sidebar-02/thumbnails/19.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+			   <li>
+              <a class="dropdown-item"  data-toggle="modal" data-target="#modalIMG4" href="#"><img src="../sidebar-02/thumbnails/24.png" alt="" style="width:100%; margin:0px"></a>
+	          </li>
+			   <li>
+              <a class="dropdown-item"  data-toggle="modal" data-target="#modalIMG2" href="#"><img src="../sidebar-02/thumbnails/9.png" alt="" style="width:100%; margin:0px"></a>
 	          </li>
 	        </ul>
                </div>
@@ -94,13 +106,37 @@
 	</div>
 </div>
 <!---->
+<!--4-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG4" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../sidebar-02/images/5.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!---->
+<!--5-->
+<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="modalIMG5" role="dialog" tabindex="-1">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body mb-0 p-0">
+				<img src="../sidebar-02/images/6.png" id="myImg" width="100%">
+			</div>
+				<button class="btn btn-outline-primary btn-rounded btn-md ml-4 text-center" data-dismiss="modal" type="button">Close</button>	
+		</div>
+	</div>
+</div>
+<!---->
 </nav>
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-xl-5 pt-5" margin="0 0 0 0">
 
-        <video autoplay loop muted class="bgvid" id="bgvid"  width="100%">
-      <source src="video.mp4" type="video/mp4">
+        <video  autoplay="autoplay" controls class="bgvid" id="bgvid"  width="100%">
+      <source src="Eat.mp4" type="video/mp4">
     </video></div>
 		</div>
 
